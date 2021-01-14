@@ -140,7 +140,7 @@ body {
     &:focus { outline: none;}
 }
 
-.social {
+.social_icons {
     background-color: hsl(217, 19%, 35%);
     width: 55%;
     height: 45px;
@@ -188,17 +188,17 @@ body {
     }
 }
 
-.fb {
+.btn_icon1 {
     background: url(img/icon-facebook.svg) center center no-repeat;
     background-size: 60%;
 }
 
-.twitter {
+.btn_icon2 {
     background: url(img/icon-twitter.svg) center center no-repeat;
     background-size: 60%;
 }
 
-.pinterest {
+.btn_icon3 {
     background: url(img/icon-pinterest.svg) center center no-repeat;
     background-size: 60%;
 }
@@ -223,7 +223,7 @@ footer {
 
     .content { width: 50%;}
     .cover-img { width: 43%;}
-    .social {
+    .social_icons {
         width: 50%;
         left: 57%;
         & > button {
@@ -238,7 +238,7 @@ footer {
 }
 
 @media only screen and (max-width:600px) {
-    .social {
+    .social_icons {
         height: 40px;
         left: 55%;
         bottom: 30%;
@@ -277,7 +277,7 @@ footer {
         }
     }
 
-    .social {
+    .social_icons {
         width: 100%;
         height: 70px;
         bottom: 0;

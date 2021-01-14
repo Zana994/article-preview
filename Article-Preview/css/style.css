@@ -207,6 +207,10 @@ body {
   cursor: pointer;
 }
 
+.shareStyle:focus, .newStyle:focus {
+  outline: none;
+}
+
 .newStyle {
   width: 30px;
   height: 30px;
@@ -216,7 +220,11 @@ body {
   opacity: 0.8;
 }
 
-.social {
+.newStyle:focus {
+  outline: none;
+}
+
+.social_icons {
   background-color: #48556a;
   width: 55%;
   height: 45px;
@@ -242,7 +250,7 @@ body {
           animation-duration: 0.5s;
 }
 
-.social::after {
+.social_icons::after {
   content: '';
   width: 0;
   height: 0;
@@ -254,7 +262,7 @@ body {
   left: 48%;
 }
 
-.social > p {
+.social_icons > p {
   color: #9eafc2;
   font-family: Manrope-Light;
   font-size: 10px;
@@ -263,7 +271,7 @@ body {
   display: inline-block;
 }
 
-.social > button {
+.social_icons > button {
   width: 30px;
   height: 30px;
   background-color: #48556a;
@@ -276,17 +284,17 @@ body {
           animation-duration: 0.5s;
 }
 
-.fb {
+.btn_icon1 {
   background: url(img/icon-facebook.svg) center center no-repeat;
   background-size: 60%;
 }
 
-.twitter {
+.btn_icon2 {
   background: url(img/icon-twitter.svg) center center no-repeat;
   background-size: 60%;
 }
 
-.pinterest {
+.btn_icon3 {
   background: url(img/icon-pinterest.svg) center center no-repeat;
   background-size: 60%;
 }
@@ -315,31 +323,31 @@ footer > p {
   .cover-img {
     width: 43%;
   }
-  .social {
+  .social_icons {
     width: 50%;
     left: 57%;
   }
-  .social > button {
+  .social_icons > button {
     width: 25px;
     height: 25px;
   }
-  .social > p {
+  .social_icons > p {
     font-size: 9px;
     padding-right: 7px;
   }
 }
 
 @media only screen and (max-width: 600px) {
-  .social {
+  .social_icons {
     height: 40px;
     left: 55%;
     bottom: 30%;
   }
-  .social > button {
+  .social_icons > button {
     width: 20px;
     height: 20px;
   }
-  .social > p {
+  .social_icons > p {
     letter-spacing: 3px;
     padding-right: 5px;
   }
@@ -373,7 +381,7 @@ footer > p {
     padding-bottom: 12%;
     text-align: start;
   }
-  .social {
+  .social_icons {
     width: 100%;
     height: 70px;
     bottom: 0;
@@ -381,14 +389,14 @@ footer > p {
     border-top-left-radius: 0;
     border-top-right-radius: 0;
   }
-  .social::after {
+  .social_icons::after {
     content: none;
   }
-  .social > button {
+  .social_icons > button {
     width: 25px;
     height: 25px;
   }
-  .social > p {
+  .social_icons > p {
     letter-spacing: 5px;
     padding-right: 10px;
   }
