@@ -1,6 +1,6 @@
 
 var shareButton = document.getElementById("btn_share");
-var socialdiv = document.querySelector('[socialContent]');
+var socialdiv = document.querySelector('[data-content]');
 socialdiv.style.display = 'none';
 
 shareButton.addEventListener('click', function() {
